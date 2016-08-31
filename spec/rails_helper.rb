@@ -7,6 +7,7 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 require './lib/crawler/processor'
+require './lib/crawler/crawler'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
