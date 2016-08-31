@@ -16,6 +16,7 @@ class Processor
 
   def process_links
     @unprocessed_links.each do |link|
+        link.chomp!('/')
       if checker(link)
         @processed_links << link
       end
