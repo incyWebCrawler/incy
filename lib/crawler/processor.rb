@@ -22,12 +22,7 @@ class Processor
   end
 
   def create_links
-    links = []
-    @processed_links.each do |link|
-      links << @domain + link
-    end
-
-    links
+    @processed_links.map!{|link| @domain+link}
   end
 end
 
@@ -38,6 +33,7 @@ dummy_info = { "url" => "http://www.makersacademy.com",
 
 pro = Processor.new
 
-pro.process_links(dummy_info)
-pro.processed_links
-puts pro.create_links
+# pro.process_links(dummy_info)
+# pro.processed_links
+# pro.create_links
+# puts pro.processed_links
