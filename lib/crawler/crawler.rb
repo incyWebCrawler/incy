@@ -2,6 +2,7 @@ class Crawler
 
   def initialize(url)
     @url = url
+    @processing = Process.new
   end
 
   def return_hash

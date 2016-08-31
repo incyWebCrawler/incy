@@ -1,0 +1,13 @@
+<%= form_for @page do |f| %>
+  <%= f.label :URL %>
+  <%= f.text_field :url %>
+  <br>
+  <%= f.submit %>
+  <% end %>
+<% if @results %>
+<% @results.each do |result| %>
+<li>
+  <%= result.url %>
+</li>
+<% end %>
+<% end %>
