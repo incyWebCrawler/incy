@@ -1,6 +1,6 @@
 class Crawler
   attr_reader :page
-  
+
   def initialize(url)
     @url = url
   end
