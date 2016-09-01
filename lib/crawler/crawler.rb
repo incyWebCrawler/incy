@@ -1,5 +1,7 @@
 class Crawler
-  LIMIT = 50
+
+  LIMIT = 10
+  
   def initialize(url, limit=Crawler::LIMIT)
     @url = url
     @processor = Processor.new(url)
@@ -16,7 +18,7 @@ class Crawler
     create_page
     add_new_links
     new_url
-    @content.export_content
+    export_content
   end
 
   def create_page
@@ -44,6 +46,10 @@ class Crawler
       @count += 1
       run_crawler
     end
+  end
+
+  def export_content
+    @content.export_content
   end
 
   def scrape_links

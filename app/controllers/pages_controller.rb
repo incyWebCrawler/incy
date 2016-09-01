@@ -9,11 +9,7 @@ class PagesController < ApplicationController
     url = params[:page][:url]
     crawler = Crawler.new(url)
     crawler.run_crawler
-    # @page = Page.all
     @results = Link.all
     render :new
   end
-
-
-
 end
