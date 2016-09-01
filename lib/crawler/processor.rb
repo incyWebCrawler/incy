@@ -24,6 +24,6 @@ class Processor
   end
 
   def checker(link)
-    (link.chars.first == "/") && (link.length > 1)
+    ((link.chars.first == "/") && (link.length > 1)) && (link[0,2] != "//")
   end
 end

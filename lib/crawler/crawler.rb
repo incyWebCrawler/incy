@@ -1,7 +1,7 @@
 class Crawler
 
   LIMIT = 10
-  
+
   def initialize(url, limit=Crawler::LIMIT)
     @url = url
     @processor = Processor.new(url)
@@ -53,15 +53,30 @@ class Crawler
   end
 
   def scrape_links
-    Nokogiri::HTML(open(@url)).css('a').map{|link| link.attribute('href').to_s}
+    begin
+      Nokogiri::HTML(open(@url)).css('a').map{|link| link.attribute('href').to_s}
+    rescue
+      []
+    end
   end
 
   def scrape_title
-    Nokogiri::HTML(open(@url)).css('title').text
+    p "**************"
+    p @url
+    begin
+      Nokogiri::HTML(open(@url)).css('title').text
+    rescue
+      "404"
+    end
   end
 
+
   def scrape_words
-    Nokogiri::HTML(open(@url)).css('p').text
+    begin
+      Nokogiri::HTML(open(@url)).css('p').text
+    rescue
+      '404 error'
+    end
   end
 
 end
