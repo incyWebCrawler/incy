@@ -37,7 +37,7 @@ describe 'Crawler' do
     context 'multiple passes' do
 
       before(:each) do
-        @crawler = Crawler.new('http://www.makersacademy.com', 5)
+        @crawler = Crawler.new('http://www.makersacademy.com', 4)
       end
 
       it 'saves visited pages to the database' do

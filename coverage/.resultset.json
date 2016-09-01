@@ -1,137 +1,159 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dan/Projects/makers/makerthon/incy/lib/crawler/crawler.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/lib/crawler/crawler.rb": [
         1,
         1,
         1,
-        9,
-        9,
-        9,
-        9,
-        null,
-        null,
-        1,
-        10,
-        null,
-        null,
-        1,
-        6,
-        6,
-        6,
-        null,
-        null,
-        1,
+        7,
+        7,
+        7,
         7,
         7,
         null,
         null,
         1,
-        6,
-        6,
-        840,
-        840,
-        null,
-        6,
+        9,
         null,
         null,
         1,
-        6,
-        null,
-        null,
-        1,
-        6,
-        6,
+        5,
         5,
         5,
         5,
         null,
         null,
+        1,
+        6,
+        6,
+        null,
         null,
         1,
-        994,
+        5,
+        5,
+        645,
+        645,
+        null,
+        5,
         null,
         null,
         1,
+        5,
+        null,
+        null,
+        1,
+        5,
+        5,
+        4,
+        4,
+        4,
+        null,
+        null,
+        null,
+        1,
+        960,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null
+      ],
+      "/Users/thomaswilliams/Google Drive/Programming/incy/lib/crawler/processor.rb": [
+        1,
+        1,
+        null,
+        1,
+        12,
+        12,
+        null,
+        null,
+        1,
+        9,
+        553,
+        9,
+        734,
+        null,
+        null,
+        1,
+        null,
+        1,
+        9,
+        9,
+        1451,
+        1451,
+        null,
+        null,
+        null,
+        1,
+        1451,
+        null,
+        null
+      ],
+      "/Users/thomaswilliams/Google Drive/Programming/incy/lib/crawler/content.rb": [
+        1,
+        null,
+        1,
+        5,
         10,
         null,
         null,
-        null
-      ],
-      "/Users/dan/Projects/makers/makerthon/incy/lib/crawler/processor.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        13,
-        13,
-        null,
-        null,
-        null,
-        null,
-        1,
-        431,
-        6,
-        846,
-        null,
         null,
         1,
         null,
         1,
-        6,
-        6,
-        1724,
-        1724,
-        840,
+        5,
+        5,
+        5,
         null,
         null,
-        null,
-        null,
-        1,
-        1724,
         null,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/helpers/app_helper.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/helpers/app_helper.rb": [
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/helpers/application_helper.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/helpers/pages_helper.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/models/page.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/models/page.rb": [
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/models/application_record.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/models/link.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/models/link.rb": [
         1,
         1,
         null
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/channels/application_cable/channel.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/channels/application_cable/connection.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/controllers/app_controller.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/controllers/app_controller.rb": [
         0,
         0,
         0,
@@ -149,12 +171,12 @@
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/controllers/application_controller.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/controllers/application_controller.rb": [
         0,
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/controllers/pages_controller.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/controllers/pages_controller.rb": [
         0,
         0,
         0,
@@ -175,17 +197,17 @@
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/jobs/application_job.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/app/mailers/application_mailer.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/lib/assets/test_crawler.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/lib/assets/test_crawler.rb": [
         0,
         0,
         0,
@@ -218,7 +240,7 @@
         0,
         0
       ],
-      "/Users/dan/Projects/makers/makerthon/incy/lib/crawler/test_crawler.rb": [
+      "/Users/thomaswilliams/Google Drive/Programming/incy/lib/crawler/test_crawler.rb": [
         0,
         0,
         0,
@@ -232,6 +254,6 @@
         0
       ]
     },
-    "timestamp": 1472743933
+    "timestamp": 1472745678
   }
 }
