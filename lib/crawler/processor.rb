@@ -2,15 +2,13 @@ class Processor
   attr_reader :processed_links
 
   def initialize(url)
-    # @processed_links = []
     @domain = url
     @unprocessed_links = []
-
-    # @unprocessed_links << links[:links_array]
   end
 
   def create_links(links)
-    (links[:links_array]).each{|el| @unprocessed_links << el}
+    raw_links = links[:links_array]
+    raw_links.each{|el| @unprocessed_links << el}
     process_links
     @processed_links.map!{ |link| @domain + link }
   end
@@ -21,9 +19,7 @@ class Processor
     @processed_links = []
     @unprocessed_links.each do |link|
         link.chomp!('/')
-      if checker(link)
-        @processed_links << link
-      end
+        @processed_links << link if checker(link)
     end
   end
 
