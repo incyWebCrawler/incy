@@ -1,15 +1,7 @@
-<%= form_for @page do |f| %>
-  <%= f.label :URL %>
-  <%= f.text_field :url %>
-  <br>
-  <%= f.submit %>
-  <% end %>
-<% if @results %>
-  <ol>
-    <% @results.each do |result| %>
-    <li>
-      <%= result.url %>
-    </li>
-    <% end %>
-  </ol>
+<%= form_tag("/pages", method: "post") do %>
+  <%= label_tag(:url, "Search for:") %>
+  <%= text_field_tag(:url) %>
+  <%= label_tag(:limit, "No. of passes:") %>
+  <%= number_field_tag(:limit) %>
+  <%= submit_tag("Search") %>
 <% end %>
