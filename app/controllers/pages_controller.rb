@@ -5,10 +5,12 @@ class PagesController < ApplicationController
   end
 
   def create
+    @page = Page.new
     url = params[:page][:url]
     crawler = Crawler.new(url)
     crawler.run_crawler
-    @result = Link.all
+    # @page = Page.all
+    @results = Link.all
     render :new
   end
 

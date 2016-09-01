@@ -5,9 +5,11 @@
   <%= f.submit %>
   <% end %>
 <% if @results %>
-<% @results.each do |result| %>
-<li>
-  <%= result.url %>
-</li>
-<% end %>
+  <ol>
+    <% @results.each do |result| %>
+    <li>
+      <%= result.url %>
+    </li>
+    <% end %>
+  </ol>
 <% end %>
