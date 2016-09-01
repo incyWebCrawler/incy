@@ -5,6 +5,7 @@ class Processor
     # @processed_links = []
     @domain = url
     @unprocessed_links = []
+
     # @unprocessed_links << links[:links_array]
   end
 
@@ -28,6 +29,5 @@ class Processor
 
   def checker(link)
     (link.chars.first == "/") && (link.length > 1)
-     #&& (!@processed_links.include? link)
   end
 end
