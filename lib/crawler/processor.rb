@@ -2,10 +2,8 @@ class Processor
   attr_reader :processed_links
 
   def initialize(url)
-    # @processed_links = []
     @domain = url
     @unprocessed_links = []
-    # @unprocessed_links << links[:links_array]
   end
 
   def create_links(links)
@@ -28,6 +26,5 @@ class Processor
 
   def checker(link)
     (link.chars.first == "/") && (link.length > 1)
-     #&& (!@processed_links.include? link)
   end
 end
