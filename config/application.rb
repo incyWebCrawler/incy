@@ -12,6 +12,7 @@ require "action_cable/engine"
 require "sprockets/railtie"
 require "./lib/crawler/crawler"
 require "./lib/crawler/processor"
+require "./lib/crawler/content"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
