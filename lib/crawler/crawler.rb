@@ -1,5 +1,5 @@
 class Crawler
-  LIMIT = 50
+  LIMIT = 3
   def initialize(url, limit=Crawler::LIMIT)
     @url = url
     @processor = Processor.new(url)
