@@ -1,24 +1,30 @@
-<div class="container">
-  <div class="page-header">
-    <h1>Incy Wincy <small>the Web Crawler</small></h1>
-  </div>
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <%= bootstrap_form_for @page do |f| %>
-        <!-- <%= f.label :URL %> -->
-        <%= f.text_field :url %>
-        <%= f.submit %>
-        <% end %>
 
-      <% if @results %>
-        <ol>
-          <% @results.each do |result| %>
-          <li>
-            <%= result.url %>
-          </li>
-          <% end %>
-        </ol>
-      <% end %>
+<div class="col-sm-6 col-sm-offset-4">
+  <!-- <%= bootstrap_form_tag(url: "/pages") do %>
+    <%= label_tag(:url, "Domain:") %>
+    <%= text_field_tag(:url) %><br />
+    <%= label_tag(:limit, "Links:") %>
+    <%= number_field_tag(:limit) %><br />
+    <%= submit_tag("Search") %>
+  <% end %> -->
+
+  <form class="form-horizontal" role="form" action="/pages" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="75MZC/kWwEs+i6/JvReLPDSLcZoELXEBVfKbcGDksCuIjvmzzmIUhXXJhKsfUokWacH8iNDUMZOJsCZ4kqU38A==" />
+    <div class="form-group">
+      <!-- <label for="url">Domain:</label> -->
+      <input class="form-control input-lg" type="text" name="url" id="url" placeholder="Domain"/><br />
+      <!-- <label for="limit">Links:</label> -->
+      <input class="form-control input-lg" type="number" name="limit" id="limit" placeholder="Links Limit"/><br />
+      <input class="btn btn-danger btn-lg btn-block" type="submit" name="commit" value="Search" data-disable-with="Search" />
     </div>
-  </div>
+  </form>
+
+  <!-- <% if @results %>
+    <ol>
+      <% @results.each do |result| %>
+      <li>
+        <%= result.url %>
+      </li>
+      <% end %>
+    </ol>
+  <% end %> -->
 </div>

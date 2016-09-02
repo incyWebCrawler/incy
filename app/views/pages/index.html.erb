@@ -1,15 +1,13 @@
 
 
-
-<% if @results %>
-  <h1>
-    YOUR RESULTS!!!
-  </h1>
-  <ol>
-    <% @results.each do |result| %>
-    <li>
-      <%= result.url %>
-    </li>
-    <% end %>
-  </ol>
-<% end %>
+<div class="col-sm-8 col-sm-offset-3">
+  <% if @results %>
+    <ol>
+      <% @results.each do |result| %>
+      <li style="color:#d9534f;">
+        <%= result.url %>
+      </li>
+      <% end %>
+    </ol>
+  <% end %>
+</div>

@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def new
     @page = Page.new
     @link = Link.new
@@ -6,14 +7,11 @@ class PagesController < ApplicationController
 
   def create
     @page = Page.new
-    url = params[:page][:url]
-    crawler = Crawler.new(url)
+    url = params[:url]
+    limit = params[:limit].to_i
+    crawler = Crawler.new(url, limit)
     crawler.run_crawler
-    # @page = Page.all
     @results = Link.all
-    render :new
+    render :index
   end
-
-
-
 end

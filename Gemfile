@@ -32,6 +32,9 @@ gem 'open_uri_redirections'
 
 gem 'nokogiri'
 gem 'bootstrap_form'
+# gem 'magic_cloud', '~> 0.0.3'
+gem 'rmagick'
+
 gem 'simplecov', :require => false, :group => :test
 
 group :development, :test do
