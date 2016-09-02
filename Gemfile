@@ -26,12 +26,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'nokogiri'
 gem 'open_uri_redirections'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 gem 'nokogiri'
+gem 'bootstrap_form'
+# gem 'magic_cloud', '~> 0.0.3'
+gem 'rmagick'
+
 gem 'simplecov', :require => false, :group => :test
 
 group :development, :test do

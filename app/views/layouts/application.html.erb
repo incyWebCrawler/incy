@@ -6,9 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body style="background-color: WhiteSmoke;">
+    <div class="container">
+      <div class="page-header">
+        <h1>Incy Wincy <small>the Web Crawler</small> | <a class="btn btn-danger" href="/pages/new" role="button">New Search</a></h1>
+
+      </div>
+      <div class="row">
     <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,7 +1,10 @@
-<%= form_tag("/pages", method: "post") do %>
-  <%= label_tag(:url, "Search for:") %>
-  <%= text_field_tag(:url) %>
-  <%= label_tag(:limit, "No. of passes:") %>
-  <%= number_field_tag(:limit) %>
-  <%= submit_tag("Search") %>
-<% end %>
+
+<div class="col-sm-6 col-sm-offset-4">
+  <form class="form-horizontal" role="form" action="/pages" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="75MZC/kWwEs+i6/JvReLPDSLcZoELXEBVfKbcGDksCuIjvmzzmIUhXXJhKsfUokWacH8iNDUMZOJsCZ4kqU38A==" />
+    <div class="form-group">
+      <input class="form-control input-lg" type="text" name="url" id="url" placeholder="Domain"/><br />
+      <input class="form-control input-lg" type="number" name="limit" id="limit" placeholder="Links Limit"/><br />
+      <input class="btn btn-danger btn-lg btn-block" type="submit" name="commit" value="Search" data-disable-with="Search" />
+    </div>
+  </form>
+</div>

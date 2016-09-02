@@ -1,7 +1,5 @@
 class Crawler
-
   LIMIT = 10
-
   def initialize(url, limit=Crawler::LIMIT)
     @url = url
     @processor = Processor.new(url)
@@ -61,8 +59,6 @@ class Crawler
   end
 
   def scrape_title
-    p "**************"
-    p @url
     begin
       Nokogiri::HTML(open(@url)).css('title').text
     rescue
