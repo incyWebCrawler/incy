@@ -41,24 +41,24 @@ describe 'Crawler' do
       end
 
       it 'saves visited pages to the database' do
-        expect{@crawler.run_crawler}.to change{Page.count}.by (5)
+        expect{@crawler.run_crawler}.to change{Page.count}.by (11)
       end
     end
   end
 
-  describe '#add_new_links' do
-
-    before(:each) do
-      @crawler = Crawler.new('https://www.gumtree.com/', 1)
-    end
-
-    xit "adds links to the 'to visit' table" do
-      processor = instance_double(@crawler.processor)
-      allow(processor).to receive(:create_links).and_return([url:'https://www.gumtree.com/'])
-      expect{@crawler.add_new_links}.to change{Link.count}.by (1)
-    end
-
-  end
+  # describe '#add_new_links' do
+  #
+  #   before(:each) do
+  #     @crawler = Crawler.new('https://www.gumtree.com/', 1)
+  #   end
+  #
+  #   xit "adds links to the 'to visit' table" do
+  #     processor = instance_double(@crawler.processor)
+  #     allow(processor).to receive(:create_links).and_return([url:'https://www.gumtree.com/'])
+  #     expect{@crawler.add_new_links}.to change{Link.count}.by (1)
+  #   end
+  #
+  # end
 
 
 

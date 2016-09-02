@@ -1,11 +1,12 @@
 class Crawler
   LIMIT = 10
-  def initialize(url, limit=Crawler::LIMIT)
+  def initialize(url, limit=Crawler::LIMIT, count)
     @url = url
     @processor = Processor.new(url)
-    @limit = limit
+    @limit = count + limit
     @arr = []
     @content = Content.new
+    @count = count
   end
 
   def return_hash
@@ -38,8 +39,7 @@ class Crawler
   end
 
   def new_url
-    @count ||= 1
-    if @count <= @limit
+    if @count < @limit
       @url = Link.find(@count)[:url]
       @count += 1
       run_crawler

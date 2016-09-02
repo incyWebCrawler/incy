@@ -19,11 +19,12 @@ class Processor
     @processed_links = []
     @unprocessed_links.each do |link|
         link.chomp!('/')
+        link.slice!(@domain) if link.include?(@domain)
         @processed_links << link if checker(link)
     end
   end
 
   def checker(link)
-    ((link.chars.first == "/") && (link.length > 1)) && (link[0,2] != "//")
+    (((link.chars.first == "/") && (link.length > 1)) && (link[0,2] != "//"))
   end
 end
