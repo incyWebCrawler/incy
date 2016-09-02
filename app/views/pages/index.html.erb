@@ -5,7 +5,9 @@
     <ol>
       <% @results.each do |result| %>
       <li style="color:#d9534f;">
-        <%= result.url %>
+        <a href="<%= result.url %>" style="color:#d9534f;" target="_blank">
+          <%= result.url %>
+        </a>
       </li>
       <% end %>
     </ol>
