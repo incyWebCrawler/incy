@@ -2,12 +2,12 @@ class Content
 
   def export_content
     process_content
-    # File.open("site_words.txt", 'w+') { |file| file.write(@words) }
+    File.open("site_words.txt", 'w+') { |file| file.write(@words) }
   end
 
-  def create_magic_cloud
-    MagicCloud::Cloud.new(export_content, rotate: :free, scale: :log, file: "site.png")
-  end
+  # def create_magic_cloud
+  #   MagicCloud::Cloud.new(export_content, rotate: :free, scale: :log, file: "site.png")
+  # end
 
 
   private
