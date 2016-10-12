@@ -10,19 +10,27 @@ class Crawler
   end
 
   def return_hash
-    {url: @url, title: scrape_title, links_array: scrape_links, words: scrape_words}
+    # Scraping words
+    # {url: @url, title: scrape_title, links_array: scrape_links, words: scrape_words}
+
+    # Not scraping words
+    {url: @url, title: scrape_title, links_array: scrape_links}
   end
 
   def run_crawler
     create_page
     add_new_links
     new_url
-    export_content
+    # export_content # experimental feature, doesn't work
   end
 
   def create_page
     @results = return_hash
-    Page.find_or_create_by(url: @results[:url], title: @results[:title], links: @results[:links_array].length, words: @results[:words])
+    # Scraping words
+    # Page.find_or_create_by(url: @results[:url], title: @results[:title], links: @results[:links_array].length, words: @results[:words])
+
+    # Not scraping words
+    Page.find_or_create_by(url: @results[:url], title: @results[:title], links: @results[:links_array].length)
   end
 
   def add_new_links
